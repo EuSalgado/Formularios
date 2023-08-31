@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.descuento {
+    align-items: center;
+    background-color: #1cd1b0;
+    display: flex;
+    height: 2%;
+    width: 100%;
+}
+
+.descuento p {
+    color: #000;
+    padding: .2rem 0rem;
+}
+
+.descuento p {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 1.2rem;
+}
+
+.main {
+    align-items: center;
+    background-color: #00669f;
+    display: flex;
+    height: 5%;
+}
+
+.main h1 {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin-left: 0.8rem;
+}
+
+.main img {
+    margin-left: 1rem;
+    height: 20%;
+}
+
+.nav {
+    background-color: #001D2D;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 0rem 0rem 1rem #616161;
+}
+
+nav ul {
+    display: flex;
+    margin-right: 1rem;
+    padding: .4rem 0;
+}
+
+nav ul li {
+    margin-left: 1rem;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: smaller;
+    font-weight: 300;
+    color: #fff;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem 4rem 4rem 4rem;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 78vh;
+    width: 100rem;
+}
+
+.hero-card {
+    background-color: gainsboro;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: 0rem 0rem 1rem #616161;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0rem;
+    height: 30rem;
+    position: relative;
+    width: 18rem;
+}
+
+.profile-hero {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+.profile-hero img {
+    position: absolute;
+    top: -5rem;
+    border-radius: 4rem;
+}
+
+.name-hero {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 400;
+    justify-content: center;
+    margin: 3rem 0 .8rem 0;
+}
+
+.description-hero {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 0 auto 0.7rem auto;
+    width: 95%;
+}
+
+.ver-mas {
+    align-items: center;
+    background-color: #00669F;
+    display: flex;
+    height: 3rem;
+    justify-content: center;
+    margin: 0 auto;
+    text-decoration: none;
+    width: 9rem;
+    margin-top: auto;
+    margin-bottom: 1rem;
+}
+
+.ver-mas p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.fa-heart {
+    color: red;
+    left: .5rem;
+    position: absolute;
+    top: .5rem;
+}
+
+.add-hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #00669F;
+    text-align: center;
+}
+
+.fa-plus{
+    color: white;
+    font-size: 4rem;
+}
+
+footer {
+    background-color: #00669F;
+    bottom: 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+}
+
+footer section p {
+    padding: .3rem 0rem;
+}
