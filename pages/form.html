@@ -11,76 +11,130 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/styles-form.css">
+    <link rel="stylesheet" href="../css/styles-form.css" />
     <title>Formulario</title>
   </head>
   <body>
     <header>
-        <section class="descuento">
-          <p>¡20% de descuento en todos los productos!</p>
-        </section>
-        <section class="main">
-          <img src="../img/logoTienda.png" alt="Logotipo de la tienda" />
-          <h1>Nombre Tienda</h1>
-        </section>
-        <section class="nav">
-          <nav>
-            <ul>
-              <li><a href="#">Contacto</a></li>
-              <li><a href="#">Registrarme</a></li>
-              <li><a href="#">Ingresar</a></li>
-            </ul>
-          </nav>
-        </section>
-      </header>
+      <section class="descuento">
+        <p>¡20% de descuento en todos los productos!</p>
+      </section>
+      <section class="main">
+        <img src="../img/logoTienda.png" alt="Logotipo de la tienda" />
+        <h1>Nombre Tienda</h1>
+      </section>
+      <section class="nav">
+        <nav>
+          <ul>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Registrarme</a></li>
+            <li><a href="#">Ingresar</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
 
-      <div class="content">
+    <div class="content">
+      <form action="../index.html" method="get" class="form">
+        <h1>¡Añadí tu super!</h1>
+        <p class="description-form">
+          Agregá tu personaje favorito completando las opciones.
+        </p>
+        <div class="quests">
+          <div class="left-form">
+            <label for="name">*Nombre</label>
+            <input type="text" name="name" id="name" required />
 
-        <form action="#" method="POST">
-            <h1>¡Añadí tu super!</h1>
-            <p>Agregá tu personaje favorito completando las opciones.</p>
-            <div class="left-form">
-                <label for="name">*Nombre</label>
-                <input type="text" name="name" id="name" required>
+            <label for="date">Fecha de nacimiento</label>
+            <input type="date" name="date" id="date" />
 
-                <label for="date">Fecha de nacimiento</label>
-                <input type="date" name="date" id="date">
+            <textarea
+              name="description"
+              id="description"
+              cols="30"
+              rows="10"
+              placeholder="Descripción"
+            ></textarea>
+          </div>
 
-                <textarea name="description" id="description" cols="30" rows="10" placeholder="Descripción"></textarea>
+          <div class="right-form">
+            <label for="species">*Especie</label>
+            <select name="species" id="species" required>
+              <option value="" disabled selected hidden>Especie</option>
+              <option value="extraterrrestre">Extraterrestre</option>
+              <option value="mitologico">Dios mitológico</option>
+              <option value="semidios">Semidiós</option>
+              <option value="razaficticia">Raza ficticia</option>
+              <option value="robot">Robot</option>
+              <option value="fantasma">Fantasma</option>
+              <option value="demonio">Demonio</option>
+            </select>
+
+            <label for="src-file1">Agregar Foto</label>
+
+            <div class="file-select" id="src-file1">
+              <input
+                type="file"
+                name="src-file1"
+                id="photo"
+                accept="image/png, image/jpeg"
+              />
             </div>
+            <label for="powers" class="powers" id="powers">Poderes</label>
+            <label id="volar"
+              ><input
+                type="checkbox"
+                name="powers"
+                id="powers"
+                value="volar"
+              />Volar</label
+            >
+            <label id="super_inteligencia"
+              ><input
+                type="checkbox"
+                name="powers"
+                id="powers"
+                value="super_inteligencia"
+              />SuperInteligencia</label
+            >
+            <label id="rayos_laser"
+              ><input
+                type="checkbox"
+                name="powers"
+                id="powers"
+                value="rayos_laser"
+              />Vista de rayo láser</label
+            >
+            <label id="billetera_gorda"
+              ><input
+                type="checkbox"
+                name="powers"
+                id="powers"
+                value="billetera_gorda"
+              />Billetera gorda</label
+            >
 
-            <div class="right-form">
-                <label for="species">*Especie</label>
-                <select name="species" id="species">
-                    <option value="extraterrrestre">Extraterrestre</option>
-                    <option value="mitologico">Dios mitológico</option>
-                    <option value="semidios">Semidiós</option>
-                    <option value="razaficticia">Raza ficticia</option>
-                    <option value="robot">Robot</option>
-                    <option value="fantasma">Fantasma</option>
-                    <option value="demonio">Demonio</option>
-                </select>
+            <label for="sex">Tipo de personaje</label>
 
-                <label for="photo">Agregar Foto</label>
-                <input type="file" name="photo" id="photo" accept="image/png, image/jpeg">
+            <label for="sex" id="heroe"
+              ><input type="radio" name="sex" id="sex" value="heroe" />Héroe /
+              Heroina</label
+            >
+            <label for="sex" id="villano"
+              ><input type="radio" name="sex" id="sex" value="villano" />Villano
+              / Villana</label
+            >
+          </div>
 
-                <label for="powers">Poderes</label>
-                <input type="checkbox" name="powers" id="powers" value="Volar">
-                <input type="checkbox" name="powers" id="powers" value="SuperInteligencia">
-                <input type="checkbox" name="powers" id="powers" value="Vista de rayo láser">
-                <input type="checkbox" name="powers" id="powers" value="Billetera gorda">
+        </div>
+        <button type="submit" class="add">Añadir</button>
+      </form>
+    </div>
 
-                <label for="sex">Tipo de personaje</label>
-                <input type="checkbox" name="sex" id="sex" value="Héroe / Heroina">
-                <input type="checkbox" name="sex" id="sex" value="Villano / Villana">
-            </div>
-        </form>
-      </div>
-
-      <footer>
-        <section>
-          <p>Todos los derechos reservados a Front End 1 | @EuSalgado</p>
-        </section>
-      </footer>
+    <footer>
+      <section>
+        <p>Todos los derechos reservados a Front End 1 | @EuSalgado</p>
+      </section>
+    </footer>
   </body>
 </html>

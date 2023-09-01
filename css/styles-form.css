@@ -1,0 +1,179 @@
+.form {
+    align-items: center;
+    background-color: #00669F;
+    border-radius: 2rem;
+    box-shadow: 0rem 0rem 1rem #616161;
+    color: white;
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    flex-direction: column;
+    min-width: 80vh;
+    min-height: 77vh;
+    flex-wrap: wrap;
+}
+
+.form h1 {
+    font-weight: 700;
+    margin: 1rem 0 1rem 0;
+}
+
+.description-form {
+    margin: 0 0 1rem 0;
+}
+
+.form label {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+#name,
+#species,
+#date {
+    font-weight: 300;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    height: 3rem;
+    border: none;
+}
+
+#description {
+    border: none;
+    border-radius: 10px;
+    font-weight: 300;
+    height: 17rem;
+    resize: none;
+}
+
+.quests {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+}
+
+.left-form,
+.right-form {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.left-form input,
+.left-form label,
+.right-form label,
+.right-form select,
+.right-form input {
+    margin-bottom: 1.5rem;
+}
+
+
+
+#volar,
+#super_inteligencia,
+#rayos_laser,
+#heroe,
+#villano {
+    font-size: 1rem;
+    margin: 0;
+}
+
+#billetera_gorda {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+#powers {
+    margin-bottom: .5rem;
+}
+
+.add {
+    background-color: #1CD1B0;
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    height: 60px;
+    margin: auto;
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+}
+
+select:invalid {
+    color: gray;
+}
+
+.file-select {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+.add:hover {
+    cursor: pointer;
+    background-color: #001D2D;
+    color: #fff;
+}
+
+.file-select:hover {
+    cursor: pointer;
+}
+
+
+.file-select::before {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    content: 'Seleccionar archivo';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.file-select input[type="file"] {
+    opacity: 0;
+    height: 1.4rem;
+    display: inline-block;
+}
+
+
+textarea {
+    color: gray;
+    padding: .8rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3rem;
+}
+
+input[type=text],
+input[type=date] {
+    padding: .8rem;
+    font-family: 'Inter', sans-serif;
+    font-size: .9rem;
+}
+
+@media screen and (min-width: 1024px) {}
+
+@media screen and (max-width:1023px) {
+    .form {
+        min-width: 45vh;
+    }
+
+    .quests {
+        flex-direction: column;
+    }
+
+    .left-form,
+    .right-form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .add {
+        margin-bottom: 1rem;
+    }
+}
